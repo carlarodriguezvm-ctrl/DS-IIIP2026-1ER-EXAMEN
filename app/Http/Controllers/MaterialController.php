@@ -12,7 +12,8 @@ class MaterialController extends Controller
      */
     public function index()
     {
-        //
+        $materiales = Material::all();
+        return dd($materiales);
     }
 
     /**

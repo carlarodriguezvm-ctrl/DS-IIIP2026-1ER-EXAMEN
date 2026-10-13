@@ -12,7 +12,8 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        //
+        $proveedores = Proveedor::all();
+        return dd($proveedores);
     }
 
     /**

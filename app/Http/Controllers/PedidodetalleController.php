@@ -12,7 +12,8 @@ class PedidodetalleController extends Controller
      */
     public function index()
     {
-        //
+        $pedidodetalles = Pedidodetalle::all();
+        return dd($pedidodetalles);
     }
 
     /**
