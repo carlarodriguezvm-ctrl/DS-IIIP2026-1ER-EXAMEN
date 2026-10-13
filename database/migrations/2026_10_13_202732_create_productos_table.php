@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre', 100);
             $table->string('descripcion', 200);
             $table->decimal('precio', 8, 2);
-            $table->integer('stock');
+            $table->string('stock');
             $table->foreignId('categoria_id')->constrained('categorias')->onDelete('cascade');
             $table->foreignId('material_id')->constrained('materials')->onDelete('cascade');
             $table->timestamps();

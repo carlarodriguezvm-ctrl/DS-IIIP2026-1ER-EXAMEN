@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre', 100);
             $table->string('code', 200)->unique();
             $table->foreignId('proveedor_id')->constrained('proveedors')->onDelete('cascade');
-            $table->integer('stock');
+            $table->string('stock', 100);
             $table->timestamps();
         });
     }
